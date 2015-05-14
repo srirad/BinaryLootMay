@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.programmer.myapplication.details1">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uni_icon"
+        android:src="@drawable/uni_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="10dip"/>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uni"
+        android:src="@drawable/video"
+        android:layout_below="@+id/uni_icon"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="0dip"
+        android:layout_marginRight="0dip"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="80% storewide"
+        android:id="@+id/textView3"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/textView4"
+        android:layout_toRightOf="@+id/uni_icon"
+        android:layout_toEndOf="@+id/uni_icon"
+        android:layout_marginLeft="10dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Promo ends on 31st dec 14"
+        android:id="@+id/textView4"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_alignBottom="@+id/uni_icon"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:src="@drawable/map_passive"
+        android:layout_below="@+id/uni"
+        android:layout_alignLeft="@+id/uni_icon"
+        android:layout_alignStart="@+id/uni_icon"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="10dip" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:src="@drawable/image_video_passive"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_toRightOf="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4"
+        android:layout_marginLeft="5dip" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6"
+        android:src="@drawable/info_active"
+        android:layout_above="@+id/textView5"
+        android:layout_toRightOf="@+id/imageView5"
+        android:layout_toEndOf="@+id/imageView5"
+        android:layout_marginLeft="5dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="80% storewide"
+        android:id="@+id/textView5"
+        android:textSize="30sp"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true" />
+</RelativeLayout>
