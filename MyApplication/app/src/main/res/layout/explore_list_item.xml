@@ -6,14 +6,13 @@
 
 
     <ImageView
-        android:layout_width="180dip"
-        android:layout_height="150dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/imageView31"
-        android:layout_alignTop="@+id/imageView30"
-        android:layout_toRightOf="@+id/imageView30"
-        android:layout_toEndOf="@+id/imageView30"
         android:src="@drawable/loot2"
-        android:layout_marginRight="5dip" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -64,11 +63,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView33"
-        android:layout_alignTop="@+id/textView32"
-        android:layout_toRightOf="@+id/textView33"
-        android:layout_toEndOf="@+id/textView33"
         android:src="@drawable/wishlist_active"
-        android:layout_marginRight="5dip" />
+        android:layout_alignBottom="@+id/textView24"
+        android:layout_alignRight="@+id/imageView31"
+        android:layout_alignEnd="@+id/imageView31" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -77,8 +75,8 @@
         android:id="@+id/textView24"
         android:textColor="#ff000000"
         android:layout_alignTop="@+id/imageView32"
-        android:layout_alignRight="@+id/textView33"
-        android:layout_alignEnd="@+id/textView33" />
+        android:layout_toLeftOf="@+id/imageView33"
+        android:layout_toStartOf="@+id/imageView33" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -87,9 +85,8 @@
         android:id="@+id/textView25"
         android:phoneNumber="false"
         android:textColor="#ff000000"
-        android:layout_alignBottom="@+id/textView34"
+        android:layout_below="@+id/textView24"
         android:layout_alignLeft="@+id/textView24"
-        android:layout_alignStart="@+id/textView24"
-        android:layout_marginRight="5dip" />
+        android:layout_alignStart="@+id/textView24" />
 
 </RelativeLayout>

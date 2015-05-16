@@ -1,12 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.example.programmer.myapplication.explore"
+    android:id="@+id/explore">
 
-   <Gallery
-        android:id="@+id/horizontallistview"
-        android:layout_width="fill_parent"
+
+    <ImageView
+
+        android:id="@+id/imageView29"
+        android:src="@drawable/explorebg"
+        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-</LinearLayout>
+    <Gallery
+        android:id="@+id/horizontallistview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView29"
+        android:layout_marginLeft="-115dip"
+        android:layout_alignLeft = "@+id/imageView29"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView36"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/food_category"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food"
+        android:id="@+id/textView42"
+        android:textColor="#ffffffff"
+        android:textSize="40sp"
+        android:layout_below="@+id/imageView36"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(25 listings)"
+        android:id="@+id/textView43"
+        android:textColor="#ffffffff"
+        android:textSize="25sp"
+        android:layout_below="@+id/textView42"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

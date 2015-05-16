@@ -32,7 +32,7 @@ public class ExploreFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.fragment_explore, null, false);
+        return inflater.inflate(R.layout.explore_fragment, null, false);
     }
 
     @Override
@@ -47,15 +47,19 @@ public class ExploreFragment extends Fragment {
         menuMain = getResources().obtainTypedArray(R.array.icons);
         menuIcons = getResources().obtainTypedArray(R.array.icon);
 
+        rowItems = null;
         rowItems = new ArrayList<ExploreRowItem>();
 
-        for (int i = 0; i < menuTitles.length; i++) {
-            ExploreRowItem items = new ExploreRowItem(menuTitles[i], menuOffers[i], menuMain.getResourceId(i, -1), menuIcons.getResourceId(1, -1), menuIcons.getResourceId(2, -1), menuLikes[i], menuRedeem[i], "redeemed");
+        int leng = menuTitles.length;
+
+
+       for (int i = 0; i < menuTitles.length; i++) {
+            ExploreRowItem items = new ExploreRowItem(menuTitles[i], menuOffers[0], menuMain.getResourceId(0, -1), menuIcons.getResourceId(0, -1), menuIcons.getResourceId(0, -1), menuLikes[0], menuRedeem[0], "redeemed");
 
 
 
             rowItems.add(items);
-        }
+       }
 
         myHorizontalListView = (Gallery) getView().findViewById(R.id.horizontallistview);
 
