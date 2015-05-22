@@ -19,7 +19,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView29"
-        android:layout_marginLeft="-115dip"
+        android:layout_marginLeft="-185dip"
         android:layout_alignLeft = "@+id/imageView29"
         />
 
