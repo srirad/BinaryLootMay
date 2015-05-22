@@ -15,11 +15,11 @@ public class ExploreRowItem {
     private String gold;
 
 
-    public ExploreRowItem(String title, String subtitle, int mainimage, int icon1, int icon2, String gold, String redeem, String redeemed) {
+    public ExploreRowItem(String title, String subtitle, int mainimage, int iconA, int icon2, String gold, String redeem, String redeemed) {
         this.title = title;
         this.subtitle = subtitle;
         this.mainimage=mainimage;
-        this.icon1=icon1;
+        this.icon1=iconA;
         this.icon2=icon2;
         this.gold=gold;
         this.redeem=redeem;
