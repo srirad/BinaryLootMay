@@ -18,9 +18,9 @@ public class ExploreRowItem {
     public ExploreRowItem(String title, String subtitle, int mainimage, int icon1, int icon2, String gold, String redeem, String redeemed) {
         this.title = title;
         this.subtitle = subtitle;
-        this.mainimage=2;
-        this.icon1=2;
-        this.icon2=2;
+        this.mainimage=mainimage;
+        this.icon1=icon1;
+        this.icon2=icon2;
         this.gold=gold;
         this.redeem=redeem;
         this.redeemed=redeemed;

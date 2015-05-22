@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:text="Food"
         android:id="@+id/textView42"
-        android:textColor="#ffffffff"
+        android:textColor="#fff"
         android:textSize="40sp"
         android:layout_below="@+id/imageView36"
         android:layout_centerHorizontal="true"

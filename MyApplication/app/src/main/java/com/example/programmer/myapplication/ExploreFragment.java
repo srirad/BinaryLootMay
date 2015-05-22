@@ -54,9 +54,7 @@ public class ExploreFragment extends Fragment {
 
 
        for (int i = 0; i < menuTitles.length; i++) {
-            ExploreRowItem items = new ExploreRowItem(menuTitles[i], menuOffers[0], menuMain.getResourceId(0, -1), menuIcons.getResourceId(0, -1), menuIcons.getResourceId(0, -1), menuLikes[0], menuRedeem[0], "redeemed");
-
-
+            ExploreRowItem items = new ExploreRowItem(menuTitles[i], menuOffers[i], menuMain.getResourceId(i, -1), menuIcons.getResourceId(0, -1), menuIcons.getResourceId(1, -1), menuLikes[i], menuRedeem[i], "redeemed");
 
             rowItems.add(items);
        }
