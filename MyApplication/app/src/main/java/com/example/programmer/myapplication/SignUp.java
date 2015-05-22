@@ -10,9 +10,12 @@ import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class SignUp extends Activity {
     Button button;
+
+    TextView signin;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,8 @@ public class SignUp extends Activity {
 
         // Locate the button in activity_main.xml
         button = (Button) findViewById(R.id.button6);
+
+        signin=(TextView) findViewById(R.id.textView38);
 
         // Capture button clicks
         button.setOnClickListener(new OnClickListener() {
@@ -33,6 +38,17 @@ public class SignUp extends Activity {
                 startActivity(myIntent);
             }
         });
+
+        signin.setOnClickListener(new OnClickListener() {
+            public void onClick(View arg0) {
+
+                // Start NewActivity.class
+                Intent myIntent = new Intent(SignUp.this,
+                        SignIn.class);
+                startActivity(myIntent);
+            }
+        });
+
     }
 
 
