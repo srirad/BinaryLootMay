@@ -20,8 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView29"
         android:layout_marginLeft="-185dip"
-        android:layout_alignLeft = "@+id/imageView29"
-        />
+        android:layout_alignLeft = "@+id/imageView29"/>
 
     <ImageView
         android:layout_width="wrap_content"
