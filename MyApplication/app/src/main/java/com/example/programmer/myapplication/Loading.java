@@ -27,7 +27,7 @@ public class Loading  extends Activity {
                 startActivity(mainIntent);
                 finish();
             }
-        }, 5000);
+        }, 3000);
 
 
     }
