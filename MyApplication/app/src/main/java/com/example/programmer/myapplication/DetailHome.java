@@ -26,7 +26,7 @@ public class DetailHome extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_detail_home,container, false);
 
 
-        ImageView imgmap=(ImageView) rootView.findViewById(R.id.imageView4);
+       /* ImageView imgmap=(ImageView) rootView.findViewById(R.id.imageView4);
         ImageView imgvideo=(ImageView) rootView.findViewById(R.id.imageView5);
         ImageView imghome=(ImageView) rootView.findViewById(R.id.imageView6);
 
@@ -68,7 +68,7 @@ public class DetailHome extends Fragment {
                         .commit();
 
             }
-        });
+        }); */
 
 
         return rootView;

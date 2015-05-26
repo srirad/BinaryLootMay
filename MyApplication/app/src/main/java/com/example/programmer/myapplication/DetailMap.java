@@ -22,7 +22,7 @@ public class DetailMap extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_detail_map,container, false);
 
 
-        ImageView imgmap=(ImageView) rootView.findViewById(R.id.map);
+       /* ImageView imgmap=(ImageView) rootView.findViewById(R.id.map);
         ImageView imgvideo=(ImageView) rootView.findViewById(R.id.video);
         ImageView imghome=(ImageView) rootView.findViewById(R.id.info);
 
@@ -64,7 +64,7 @@ public class DetailMap extends Fragment {
                         .commit();
 
             }
-        });
+        }); */
 
 
         return rootView;
