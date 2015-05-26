@@ -49,36 +49,43 @@
         android:layout_alignLeft="@+id/textView3"
         android:layout_alignStart="@+id/textView3" />
 
-    <ImageView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView4"
-        android:src="@drawable/map_passive"
+        android:id="@+id/map"
         android:layout_below="@+id/uni"
         android:layout_alignLeft="@+id/uni"
         android:layout_alignStart="@+id/uni"
-        android:layout_marginLeft="15dip"
-        android:layout_marginTop="10dip" />
+        android:layout_marginLeft="8dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/detail_button"
+        android:drawableLeft="@drawable/map_icon"
+        android:paddingLeft="30dp"/>
 
-    <ImageView
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView5"
-        android:src="@drawable/image_video_passive"
-        android:layout_alignTop="@+id/imageView6"
-        android:layout_toRightOf="@+id/imageView4"
-        android:layout_toEndOf="@+id/imageView4"
-        android:layout_marginLeft="10dip" />
+        android:id="@+id/star"
+        android:layout_alignTop="@+id/info"
+        android:layout_toRightOf="@+id/map"
+        android:layout_toEndOf="@+id/map"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/detail_button"
+        android:drawableLeft="@drawable/star_icon"
+        android:paddingLeft="30dp"/>
 
-    <ImageView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView6"
-        android:src="@drawable/info_active"
+        android:id="@+id/info"
         android:layout_above="@+id/textView5"
-        android:layout_toRightOf="@+id/imageView5"
-        android:layout_toEndOf="@+id/imageView5"
-        android:layout_marginLeft="10dip" />
+        android:layout_toRightOf="@+id/star"
+        android:layout_toEndOf="@+id/star"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/detail_button1"
+        android:drawableLeft="@drawable/info_icon"
+        android:paddingLeft="30dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -86,7 +93,8 @@
         android:text="UNIQLO"
         android:id="@+id/textView5"
         android:textSize="30sp"
-        android:layout_below="@+id/imageView4"
+        android:layout_below="@+id/map"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dip"/>
+        android:layout_marginBottom="10dip"
+        />
 </RelativeLayout>

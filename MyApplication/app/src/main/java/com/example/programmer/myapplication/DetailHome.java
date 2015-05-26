@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 
 /**
@@ -26,9 +27,9 @@ public class DetailHome extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_detail_home,container, false);
 
 
-       /* ImageView imgmap=(ImageView) rootView.findViewById(R.id.imageView4);
-        ImageView imgvideo=(ImageView) rootView.findViewById(R.id.imageView5);
-        ImageView imghome=(ImageView) rootView.findViewById(R.id.imageView6);
+        Button imgmap=(Button) rootView.findViewById(R.id.map);
+        Button imgvideo=(Button) rootView.findViewById(R.id.star);
+        Button imghome=(Button) rootView.findViewById(R.id.info);
 
         imgmap.setOnClickListener(new View.OnClickListener()
         {
@@ -68,7 +69,7 @@ public class DetailHome extends Fragment {
                         .commit();
 
             }
-        }); */
+        });
 
 
         return rootView;

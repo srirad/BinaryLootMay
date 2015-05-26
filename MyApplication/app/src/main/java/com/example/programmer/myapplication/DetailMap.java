@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 
 /**
@@ -22,9 +23,9 @@ public class DetailMap extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_detail_map,container, false);
 
 
-       /* ImageView imgmap=(ImageView) rootView.findViewById(R.id.map);
-        ImageView imgvideo=(ImageView) rootView.findViewById(R.id.video);
-        ImageView imghome=(ImageView) rootView.findViewById(R.id.info);
+        Button imgmap=(Button) rootView.findViewById(R.id.map);
+        Button imgvideo=(Button) rootView.findViewById(R.id.star);
+        Button imghome=(Button) rootView.findViewById(R.id.info);
 
         imgmap.setOnClickListener(new View.OnClickListener()
         {
@@ -64,7 +65,7 @@ public class DetailMap extends Fragment {
                         .commit();
 
             }
-        }); */
+        });
 
 
         return rootView;
