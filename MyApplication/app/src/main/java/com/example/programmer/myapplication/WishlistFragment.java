@@ -54,7 +54,7 @@ public class WishlistFragment extends ListFragment implements OnItemClickListene
 
         for (int i = 0; i < menutitles.length; i++) {
             WishlistRowItem items = new WishlistRowItem(menutitles[i], menuImage.getResourceId(
-                    i, -1), menuIcons.getResourceId(1, -1), menuIcons.getResourceId(2, -1), menusubtitles[i], menudays[i], menucount[i], menuredeems[i], "redeemed");
+                    i, -1), menuIcons.getResourceId(0, -1), menuIcons.getResourceId(1, -1), menusubtitles[i], menudays[i], menucount[i], menuredeems[i], "redeemed");
 
             rowItems.add(items);
         }
