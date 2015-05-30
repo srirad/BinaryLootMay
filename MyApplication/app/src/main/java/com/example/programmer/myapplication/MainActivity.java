@@ -2,16 +2,19 @@ package com.example.programmer.myapplication;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Point;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity
@@ -91,6 +94,19 @@ public class MainActivity extends ActionBarActivity
 
                break;
         }
+
+
+        //Display display = getWindowManager().getDefaultDisplay();
+       // Point size = new Point();
+       // display.getSize(size);
+       // int width = size.x;
+        //int height = size.y;
+
+        //String xx=""+height+"---"+width;
+
+        //Toast.makeText(this, xx, Toast.LENGTH_LONG).show();
+
+
         fragmentManager.beginTransaction()
                 .replace(R.id.container, fragment)
                 .commit();
